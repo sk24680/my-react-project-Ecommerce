@@ -1,13 +1,16 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
-import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
+import product1 from "../assets/images/velocity sneakers.png";
+import product2 from "../assets/images/hats1.png";
+import product3 from "../assets/images/jacket.png";
+import product4 from "../assets/images/olivcap.png";
+import product5 from "../assets/images/headphones.png";
+
+
+
 
 export const products = [
   {
     id: 1,
-    name: "Velocity Sneakers",
+    name: "standard Sneakers",
     category: "Footwear",
     price: 2499,
     description: "Sleek running sneakers designed for all-day comfort.",
@@ -85,4 +88,5 @@ export const products = [
     description: "Bold red sneakers that combine style and performance.",
     image: product1,
   },
-];
+];   
+

@@ -1,44 +1,109 @@
 .home-container {
-    padding: 30px;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f7f7f7;
-    color: #111;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e; /* Dark background for neon contrast */
+  color: #fff; /* White text for readability */
 }
 
 h1 {
-    color: rebeccapurple;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #ff00ff; /* Neon Magenta */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
 }
 
 .filters {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .filters input,
 .filters select {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    min-width: 250px;
-    background-color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 250px;
+  background-color: #222; /* Dark background for inputs */
+  color: #fff; /* White text for inputs */
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.5); /* Neon glow effect */
+  transition: all 0.3s ease;
 }
 
 .filters input:focus,
 .filters select:focus {
-    outline: none;
-    border-color: rebeccapurple;
-    box-shadow: 0 0 5px rgba(102, 51, 153, 0.4);
+  outline: none;
+  border-color: #ff00ff; /* Neon Magenta border on focus */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); /* Enhanced neon glow on focus */
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+.product-grid .product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #333; /* Dark background for product cards */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.3); /* Neon glow effect */
+  transition: all 0.3s ease;
+}
+
+.product-grid .product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Enhanced neon glow on hover */
+}
+
+.product-grid .product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ff00ff; /* Neon Magenta border below image */
+}
+
+.product-grid .product-card .product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-grid .product-card .product-info h3 {
+  color: #ff00ff; /* Neon Magenta text */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.product-grid .product-card .product-info p {
+  color: #fff; /* White text */
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.product-grid .product-card .product-info .price {
+  color: #ff00ff; /* Neon Magenta price */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.product-grid .product-card .product-info .add-to-cart {
+  padding: 10px 20px;
+  background-color: #ff00ff; /* Neon Magenta button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.5); /* Neon glow effect */
+  transition: all 0.3s ease;
+}
+
+.product-grid .product-card .product-info .add-to-cart:hover {
+  background-color: #ff66ff; /* Lighter neon magenta on hover */
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); /* Enhanced neon glow on hover */
 }
